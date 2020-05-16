@@ -38,7 +38,6 @@ def naval_quote():
         elif check(x,'cache.txt') == True: # if found, recall function
             return naval_quote()
     except RecursionError: 
-# return "All quotes have been posted at least once, truncate cache"
         return resetq() # call reset function to determine the future
 
     infile.close()
